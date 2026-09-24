@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>내 첫 번째 웹페이지</title>
+</head>
+<body>
+  <h1>안녕하세요! VS Code에 오신 것을 환영하지말자.</h1>
+  <p>내가 만든 첫 번째 웹페이지입니다.</p>
+  <p>대단하다.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 첫 번째 웹페이지</title>
+  <!-- PWA manifest 설정 연결 -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4a90e2">
+</head>
+<body>
+  <h1>안녕하세요! VS Code에 오신 것을 환영합니다.</h1>
+  <p>내가 만든 첫 번째 웹페이지입니다.</p>
+
+  <!-- 서비스 워커 등록 스크립트 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
